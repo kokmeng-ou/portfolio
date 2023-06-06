@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500;700;900&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Roboto+Slab:wght@300;400;700;900&display=swap');
+body { font-family: 'Roboto Slab', serif; margin: 0; padding: 0; }
+#page1 { max-width: 1700px; margin: 0 auto; position: relative; background: url(../image/Orange.jpeg) center; background-size: cover ; background-repeat: no-repeat ; position: relative; }
+/* text */
+
+h1 { margin: auto; font-weight: 700; }
+h2 { margin: 0 0 .5em 0; font-weight: 700; line-height: 1.1em; }
+h3 { margin: 0 0 2.5em 0; font-weight: 400; }
+
+/* header */
+header{ height: 100vh; }
+header a.logo { margin-left: 5vh; padding: 0.5vh 0 0 0; font-weight: 900; font-size: 50px; color: #fddaac; text-decoration: none; ;position: fixed; z-index: 2;}
+header nav{ background-color: rgba(0, 0, 0, .40); width: 100%; top: 0; left: 0; padding: 20px 0 2px 0 ; z-index: 1; position: fixed;}
+header nav ul { margin: 0; padding: 0 7vh 3vh 0 ; list-style: none; float: right; right: 0; z-index: 2; }
+header nav li { display: inline-block; margin-left: 40px; position: relative;}
+header nav a { color: #fddaac; text-decoration: none; font-size: 20px;}
+header nav a:hover { color: #fddaac ; }
+header nav a::before { content: ''; display: block; height: 5px; background-color:#761803; position: absolute; bottom:  0; width: 0%; transition: all ease-in-out 400ms;}
+header nav a:hover::before { width: 100%;}
+
+
+/* Box */
+
+header div.box1 { color: #6f2301; font-weight: bold; border: 3px solid #761803; position: absolute;  top: 55%; left: 50%;transform: translate(-50%, -50%); width: 80%; height: 75%; padding: 20px; background-color: whitesmoke; border-radius: 10px;}
+header div aside input[type=text], select, textarea { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+@media screen and ( max-width: 850px){
+/* header */
+
+	header { height: 150vh; }
+	header a.logo { margin-left: 5vh; padding: 0.5vh 0 0 0;font-size: 40px;}
+	header nav ul { margin: 0; padding: 0 7vh 3vh 0 ;}
+	header nav a { font-size: 15px;}
+
+/* Box */
+
+header div.box1 { top: 45%;height: 60%;}
+header div aside input[type=text], select, textarea { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+
+@media screen and ( max-width: 700px){
+
+
+/* header */
+
+	header { height: 100vh;}
+	header a.logo { margin-left: 5vh; padding: 2% 0 0 0;font-size: 30px;}
+	header nav ul { margin: 0; padding: 0 7vh 3vh 0 ;}
+	header nav a { font-size: 10px;}
+
+/* Box */
+
+header div.box1 { top: 52%; height: 80%; padding: 20px;}
+header div aside input[type=text], select, textarea { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+
+
+
+
+
+
+
+
+
+
+

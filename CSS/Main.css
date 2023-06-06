@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;500;700;900&family=Open+Sans:ital,wght@0,300;0,700;1,300;1,700&family=Roboto+Slab:wght@300;400;700;900&display=swap');
+body { font-family: 'Roboto Slab', serif; margin: 0; padding: 0; }
+#page1 { max-width: 1700px; margin: 0 auto; position: relative;}
+/* text */
+
+h1 { margin: auto; font-weight: 700; }
+h2 { margin: 0 0 .5em 0; font-weight: 700; line-height: 1.1em; }
+h3 { margin: 0 0 2.5em 0; font-weight: 400; }
+ 
+h1.Zero1 { font-size: 60px; }
+h2.Zero2 { font-size: 55px; color:#feefce; }
+h3.Zero3 { font-size: 30px; }
+
+/* header */
+header{ height: 100vh; background: url(../image/Orange.jpeg) center; background-size: cover; background-repeat: no-repeat; position: relative;}
+header a.logo { margin-left: 5vh; padding: 0.5vh 0 0 0; font-weight: 900; font-size: 50px; color: #fddaac; text-decoration: none; ;position: fixed; z-index: 2;}
+header nav{ background-color: rgba(0, 0, 0, .40); width: 100%; top: 0; left: 0; padding: 20px 0 2px 0 ; z-index: 1; position: fixed;}
+header nav ul { margin: 0; padding: 0 3% 3vh 0 ; list-style: none; float: right; right: 0; z-index: 2; }
+header nav li { display: inline-block; margin-left: 40px; position: relative;}
+header nav a { color: #fddaac; text-decoration: none; font-size: 20px;}
+header nav a:hover { color: #fddaac ; }
+header nav a::before { content: ''; display: block; height: 5px; background-color:#761803; position: absolute; bottom:  0; width: 0%; transition: all ease-in-out 400ms;}
+header nav a:hover::before { width: 100%;}
+header div.Hero { margin: 0 0 0 0; padding: 28vh 16% 0 0 ; float: right; text-align: right;}
+header p.scroll { position: absolute; writing-mode: vertical-rl; bottom: 50px; left: 50PX; font-size: 25px; color: #ffac91; }
+
+
+/* main */
+main { height: 140vh; background-color: #ffedd0; z-index: -1;}
+main h2.In-box { font-size:50px; text-align: center; padding: 20px; } 
+main div#Box {color: #6f2301; border: 3px solid #761803; position: absolute;  top: 70%; left: 50%;transform: translate(-50%, -50%); width: 80%; height: 50%; padding: 20px; background-color: #fff8e3; border-radius: 10px; display: block;}
+/* Bottom */
+main div.lowlevel { float: right; position: absolute; bottom: 0 ; right: 15vh; }
+main div.lowlevel img { margin: 5px; width: 50px; height: 50px; }
+main div.made {  position: absolute; bottom: 0 ; left: 11vh;  }
+
+
+/* acticle 1*/
+main section.selfIN { width: auto; height: 300px ;}
+main p.one {padding-left: 20px; padding-right: 40px; font-weight: 700; position: absolute;}
+main div.image1 img{ position: absolute; left: 100px; width: 250px; height: 250px;}
+main h2.myself{ text-align: center;}
+main div.art1 { float: right; right: 0px;  position: sticky; margin:60px 0 0 240px ; line-height: 2em; width: 33%;}
+
+
+/* acticle 2*/
+main section.selfIN1 { width: auto; height: 600px ;}
+main p.two {padding-left: 20px; padding-right: 40px; font-weight: 700; position: absolute;}
+main section.selfIN1 aside div.heading_two aside { width: 33%; float: left; text-align: center; padding-top: 50px;}
+main section.selfIN1 aside h3 a { color: black; text-decoration: none;}
+main section.selfIN1 aside h3 a:hover { text-decoration: underline; }
+main section.selfIN1 aside .content.Technology { background-image: url(../image/02.png) ; }
+main section.selfIN1 aside .content.Business{ background-image: url(../image/01.png); }
+main section.selfIN1 aside .content.Farmer { background-image: url(../image/03.png); }
+
+section.selfIN1 .content { margin: 15px; background: no-repeat center top; background-size: 75px 75px; padding-top: 85px; }
+
+
+/* media queries */
+
+@media screen and ( max-width: 850px){
+/* header */
+
+	header { height: 70vh; background: url(../image/Orange.jpeg) center; }
+	header a.logo { margin-left: 5vh; padding: 0.5vh 0 0 0;font-size: 40px;}
+	header nav ul { margin: 0; padding: 0 7vh 3vh 0 ;}
+	header nav a { font-size: 15px;}
+	header div.Hero { margin: 0 0 0 0; padding: 15vh 7vh 0 0 ;}
+	header p.scroll { font-size: 14px; color: #fbeec2; }
+
+/* main */
+	main { height: 100vh;}
+
+/* Bottom */
+	main div.lowlevel { right: 10vh; }
+	main div.lowlevel img { margin: 2px; }
+	main div.made {left: 6vh;  }	
+
+/* acticle 1*/
+	main section.selfIN { height: 200px ;}
+	main p.one {padding-left: 15px;}
+	main div.image1 img{ width: 150px; height: 150px; left: 80px;}
+	main div.art1 { margin:20px 0 0 210px ; line-height: 1em; width: 40%;}
+
+/* acticle 2*/
+	main section.selfIN1 { width: auto; height: 400px ;}
+	main p.two {padding-left: 15px;}
+	main section.selfIN1 aside div.heading_two aside { padding-top: 10px;}
+
+}
+
+@media screen and ( max-width: 700px){
+	
+	h1.Zero1 { font-size: 30px; }
+	h2.Zero2 { font-size: 28px; }
+	h3.Zero3 { font-size: 15px; }
+
+/* header */
+
+	header { height: 50vh; background: url(../image/Orange.jpeg) center; }
+	header a.logo { margin-left: 5vh; padding: 2% 0 0 0;font-size: 30px;}
+	header nav ul { margin: 0; padding: 0 7vh 3vh 0 ;}
+	header nav a { font-size: 10px;}
+	header div.Hero { margin: 0 0 0 0; padding: 15vh 7vh 0 0 ; }
+	header p.scroll { font-size: 10px; color: #601401; }
+
+/* main */
+	main { height: 75vh;}
+	main h2.In-box { font-size: 30px; padding: 5px; }
+
+/* Bottom */
+	main div.lowlevel { right: 6vh; }
+	main div.lowlevel img { margin: 1px; width: 30px; height: 30px; }
+	main div.made {left: 6vh;  }	
+
+/* acticle 1*/
+	main section.selfIN { height: 200px ;}
+	main p.one {padding-left: 15px;}
+	main div.image1 img{ width: 100px; height: 100px; left: 50px;}
+	main h2.myself{ font-size: 15px;}
+	main div.art1 { margin:10px 0 0 155px ; line-height: 1em; width: 40%;}
+
+/* acticle 2*/
+	main p.two {padding-left: 15px;}
+	main section.selfIN1 aside div.heading_two aside { padding-top: 10px;}
+	main section.selfIN1 { width: auto; height: 200px ;}
+	main section.selfIN1 aside div.heading_two aside { text-align: left; padding-top: 0px;}
+	main section.selfIN1 aside h3 a { color: black; text-decoration: none; font-size: 15px;}
+	main section.selfIN1 aside h3 a:hover { text-decoration: underline;}
+	main section.selfIN1 aside .content.Technology { font-size: 10px; background-image: url(../image/02.png) ; }
+	main section.selfIN1 aside .content.Business{ font-size: 10px; background-image: url(../image/01.png); }
+	main section.selfIN1 aside .content.Farmer { font-size: 10px; background-image: url(../image/03.png); }
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
